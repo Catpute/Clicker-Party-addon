@@ -1,16 +1,18 @@
-
+<html>
+	<body>
+	<pre>
 if(PartyTime === undefined) var PartyTime = {};
 if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
 MyMod.launch = function(){
 PartyTime.isLoaded = 1;
 Game.customOptionsMenu.push(function(){
-	CCSE.AppendCollapsibleOptionsMenu("Party Button", '<button onclick="lol()"></button>');
+	CCSE.AppendCollapsibleOptionsMenu("Party Button", '&lt;button onclick="lol()"&gt;&lt;/button&gt;');
 });
 }
 
 if(!PartyTime.isLoaded){
-	if(CCSE && CCSE.isLoaded){
+	if(CCSE &amp;&amp; CCSE.isLoaded){
 		PartyTime.launch();
 	}
 	else{
@@ -34,3 +36,6 @@ if(!PartyTime.isLoaded){
       Game.Party = true;
     }
   }
+</pre>
+	</body>
+</html>
