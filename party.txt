@@ -11,6 +11,7 @@ Game.customOptionsMenu.push(function(){
 if(!PartyTime.isLoaded){
 	if(CCSE && CCSE.isLoaded){
 		PartyTime.launch();
+		}
 	}
 	else{
 		if(!CCSE) var CCSE = {};
