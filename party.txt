@@ -4,12 +4,12 @@ if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieC
 PartyTime.launch = function(){
 PartyTime.isLoaded = 1;
 Game.customOptionsMenu.push(function(){
-	CCSE.AppendCollapsibleOptionsMenu("Party Button", '&lt;button onclick="lol()"&gt;&lt;/button&gt;');
+	CCSE.AppendCollapsibleOptionsMenu("Party Button", '<button onclick="lol()"></button>');
 });
 }
 
 if(!PartyTime.isLoaded){
-	if(CCSE &amp;&amp; CCSE.isLoaded){
+	if(CCSE && CCSE.isLoaded){
 		PartyTime.launch();
 	}
 	else{
