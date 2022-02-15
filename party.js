@@ -1,5 +1,6 @@
 <html>
 	<body>
+	<p>fu-</p>
 	<script>
 if(PartyTime === undefined) var PartyTime = {};
 if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
