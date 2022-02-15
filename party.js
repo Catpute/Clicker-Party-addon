@@ -4,7 +4,7 @@ if(typeof CCSE == 'undefined') { Game.LoadMod('https://klattmose.github.io/Cooki
 party.launch = function(){
 party.isLoaded = 1;
 Game.customOptionsMenu.push(function(){
-	CCSE.AppendCollapsibleOptionsMenu("Party Button", '<button onclick="lol()"></button>');
+	CCSE.AppendCollapsibleOptionsMenu("Party Button", '<button onclick="lol()">Party toggle</button>');
 });
 }
 
