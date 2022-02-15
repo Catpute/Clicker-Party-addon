@@ -5,7 +5,8 @@ PartyTime.launch = function(){
 PartyTime.isLoaded = 1;
 Game.customOptionsMenu.push(function(){
 	CCSE.AppendCollapsibleOptionsMenu("Party Button", '<button onclick="lol()"></button>');
-});
+				      }
+);
 }
 
 if(!PartyTime.isLoaded){
@@ -34,3 +35,4 @@ if(!PartyTime.isLoaded){
       Game.Party = true;
     }
   }
+}
