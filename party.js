@@ -1,3 +1,4 @@
+<!doctype = JS>
 if(party === undefined) var party = {};
 if(typeof CCSE == 'undefined') { Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js'); }
 
