@@ -4,7 +4,7 @@
 if(PartyTime === undefined) var PartyTime = {};
 if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
-MyMod.launch = function(){
+PartyTime.launch = function(){
 PartyTime.isLoaded = 1;
 Game.customOptionsMenu.push(function(){
 	CCSE.AppendCollapsibleOptionsMenu("Party Button", '&lt;button onclick="lol()"&gt;&lt;/button&gt;');
