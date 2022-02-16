@@ -8,7 +8,7 @@ Game.registerMod("partybutton", {
         function launch() {
             PartyTime.isLoaded = 1;
             lol();
-            Game.Notify(`Party Button ready!`, '', [49, 7]);
+            Game.Notify(`Party Button ready!`, 'The mod is ready for use!', [49,5]);
             Game.customOptionsMenu.push(function () {
                 CCSE.AppendCollapsibleOptionsMenu("Party Button", '<p>test</p>');
             }
