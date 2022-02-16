@@ -3,7 +3,7 @@ Game.registerMod("partybutton", {
         Game.Notify(`Party Button loading!`, '', [49, 4]);
         //this string needs to match the ID provided in your info.txt
         if (PartyTime == undefined) { var PartyTime = {}; }
-        if (CCSE == 'undefined') { CCSE == Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js'); }
+        if (CCSE == 'undefined') { CCSE = Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js'); }
 
         function launch() {
             PartyTime.isLoaded = 1;
