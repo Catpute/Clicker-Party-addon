@@ -1,47 +1,16 @@
-Game.registerMod("partybutton", {
-    init: function () {
-        //this string needs to match the ID provided in your info.txt
-        if (PartyTime == undefined) { var PartyTime = {}; }
-        if (CCSE == 'undefined') { Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js'); }
-
-        function launch() {
-            PartyTime.isLoaded = 1;
-            lol();
-            Game.Notify(`Party Button ready!`, '', [16, 5, partybutton.iconURL]);
-            Game.customOptionsMenu.push(function () {
-                CCSE.AppendCollapsibleOptionsMenu("Party Button", '<p>test</p>');
-            }
-            );
-        }
-
-        if (!PartyTime.isLoaded) {
-            if (CCSE && CCSE.isLoaded) {
-                launch();
-            }
-        }
-        else {
-            if (!CCSE) var CCSE = {};
-            if (!CCSE.postLoadHooks) CCSE.postLoadHooks = [];
-            CCSE.postLoadHooks.push(launch());
-        }
-        function lol() {
-            var toggled = false;
-
-            if (toggled == true) {
-                toggled = false;
-                Game.PARTY = false;
-
-            }
-            else if (toggled == false) {
-                toggled = true;
-                Game.PARTY = true;
-            }
-        }
-    },
-    save: function () {
-        //use this to store persistent data associated with your mod
-    },
-    load: function (str) {
-        //do stuff with the string data you saved previously
-    },
+Game.registerMod("sample mod",{//this string needs to match the ID provided in your info.txt
+	init:function(){
+		//this function is called as soon as the mod is registered
+		//declare hooks here
+		
+		//note: this mod does nothing but show a notification at the bottom of the screen once it's loaded
+		Game.Notify(`Example mod loaded!`, '', [16, 5]);
+		Game.PARTY = true;
+	},
+	save:function(){
+		//use this to store persistent data associated with your mod
+	},
+	load:function(str){
+		//do stuff with the string data you saved previously
+	},
 });
