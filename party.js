@@ -4,7 +4,7 @@ Game.registerMod("sample mod",{//this string needs to match the ID provided in y
 		//declare hooks here
 		
 		//note: this mod does nothing but show a notification at the bottom of the screen once it's loaded
-		Game.Notify(`Example mod loaded!`, '', [16, 5]);
+		Game.Notify(`Example mod loaded!`, '', [49, 7]);
 		Game.PARTY = true;
 	},
 	save:function(){
