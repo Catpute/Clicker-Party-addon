@@ -1,6 +1,6 @@
 Game.registerMod("partybutton", {
     init: function () {
-        Game.Notify(`Party Button loading!`, '', [49, 4, partybutton.iconURL]);
+        Game.Notify(`Party Button loading!`, '', [49, 4]);
         //this string needs to match the ID provided in your info.txt
         if (PartyTime == undefined) { var PartyTime = {}; }
         if (CCSE == 'undefined') { Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js'); }
@@ -8,7 +8,7 @@ Game.registerMod("partybutton", {
         function launch() {
             PartyTime.isLoaded = 1;
             lol();
-            Game.Notify(`Party Button ready!`, '', [49, 7, partybutton.iconURL]);
+            Game.Notify(`Party Button ready!`, '', [49, 7]);
             Game.customOptionsMenu.push(function () {
                 CCSE.AppendCollapsibleOptionsMenu("Party Button", '<p>test</p>');
             }
